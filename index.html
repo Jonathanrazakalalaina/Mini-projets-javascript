@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-projets Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>Mes mini-projets Javascript</h1>
+
+    <form>
+        <input class="search-input" type="text" placeholder="Rechercher un projet" required>
+        <button type="submit">Rechercher</button>
+    </form>
+    
+    <div class="projects-block">
+        <div class="project">
+            <h3>Qui es-tu à ton âge ?</h3>
+            <img src="img/user-clock.svg" alt="image descriptive">
+            <p>Lorsque vous entrez un âge, le programme vous indiquera votre catégorie selon des fourchettes prédéfinies.</p>
+            <button class="try" onclick="ageCategories()">Essayer</button>
+        </div>
+
+        <div class="project">
+            <h3>Qui sont tes amis ?</h3>
+            <img src="img/users.svg" alt="image descriptive">
+            <p>Saisie autant de fois des noms de tes amis. Ils seront ensuite mémorisés et affichés sous forme de liste.</p>
+            <button class="try" onclick="listeAmies()">Essayer</button>
+        </div>
+
+        <div class="project">
+            <h3>Nombre/lettre.</h3>
+            <img src="img/language.svg" alt="image descriptive">
+            <p>Tu as du mal à ecrire les chiffres en lettres pour tes devoirs ? Tu tombes bien ! Je crois que je peux t'aider un peu.</p>
+            <button class="try" onclick="letterConversion()">Essayer</button>
+        </div>
+
+        <div class="project ten">
+            <h3>Les dix suivants !</h3>
+            <div>
+                <img src="img/1.svg" alt="image descriptive" style="margin: 10px 0 10px 30px;">
+                <img src="img/0.svg" alt="" style="margin: 10px 0;">
+            </div>
+            <p>Peu parlant peut-être au niveau fonctionnalité, mais idéal pour celui qui pratique des exercices d'algorithmique.</p>
+            <button class="try" onclick="lesDixNombresSuivants()">Essayer</button>
+        </div>
+
+        <div class="project">
+            <h3>Table de multiplication.</h3>
+            <img src="img/calculator.svg" alt="image descriptive">
+            <p>En quelques clics, tu peux faire toutes les tables multiplications du mondes. Essaie un peu pour voir !</p>
+            <button class="try" onclick="multiplication()">Essayer</button>
+        </div>
+
+        <div class="project">
+            <h3>Le plus grand des 5 !</h3>
+            <img src="img/question.svg" alt="image descriptive">
+            <p>Ici je t'invite à saisir cinq nombres/chiffres de ton choix, ensuite on te dira lequel parmis eux est le plus grand et quand a-t-il été saisie.</p>
+            <button class="try" onclick="lePlusGrandNombre()">Essayer</button>
+        </div>
+
+        <div class="project">
+            <h3>Simulateur de facture.</h3>
+            <img src="img/money-check-dollar.svg" alt="image descriptive">
+            <p>Aimez-vous faire les courses ? Il est vrai que c'est amusant. Mais ça retire également de l'argent. Bref essaie un peu cette caisse intelligente et dites-moi ce que vous en pensez !</p>
+            <button class="try" onclick="transaction()">Essayer</button>
+        </div>
+
+        <div class="project">
+            <h3>En quelle saison sommes-nous ?</h3>
+            <img src="img/cloud-sun-rain.svg" alt="image descriptive">
+            <p>A Madagascar, on distingue au moins trois saisons. Si tu veux te renseigner, essaie ce programme et entre un numéro qui correspond à son mois et il te dira le temps qu'il fait.</p>
+            <button class="try" onclick="numbmonth()">Essayer</button>
+        </div>
+
+        <div class="project">
+            <h3>Jeu du pierre-papier-ciseaux</h3>
+            <img src="img/hand-peace.svg" alt="image descriptive" style="transform: rotate(80deg);">
+            <p>Connaîs-tu le fameux jeu du pierre-papier-ciseaux ? J'en étais sûr ! Ici, je t'ai écris un programme qui permet d'en jouer. Tu veux essayer ?</p>
+            <button class="try" onclick="pierrePapierCiseaux()">Essayer</button>
+        </div>
+
+
+   <script src="app.js"></script>
+</body>
+</html>

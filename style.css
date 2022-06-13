@@ -1,0 +1,159 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Yu Gothic Medium', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+form {
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50%;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    margin: 10px 0px;
+    border: 1px solid #ccc;
+    border-radius: 0;
+}
+
+input:focus {
+    outline: 0;
+    border: 2px solid #12a1da;
+}
+
+form button {
+    padding: 5px;
+    height: 40px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    font-size: 1.1rem;
+    transition: all 0.3s ease-in 0s;
+}
+
+form button:hover {
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+.projects-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.project {
+    margin: 10px;
+    padding: 10px;
+    width: 275px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start center;
+    border: 1px solid #cccccc;
+    background-color: white;
+    transition: all 0.1s ease-in 0s;
+}
+
+.ten div {
+    display: flex;
+    flex-direction: row;
+}
+
+.project:hover {
+    box-shadow: 2px 4px  10px #808080;
+}
+
+h3 {
+    text-align: center;
+    pointer-events: none;
+}
+
+img {
+    max-width: 190px;
+    height: 175px;
+    margin: 10px 38px;
+}
+
+p {
+    pointer-events: none;
+}
+
+.try {
+  width: 50%;
+  height: 40px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  font-size: 1.1rem;
+  background-color: #12a1da;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.try:hover {
+    cursor: pointer;
+    background-color: #0578c5;
+    color: white;
+}
+
+
+
+@media (max-width: 760px) {
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .projects-block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project {
+        width: 100%;
+        align-items: center;
+        padding: 30px;
+        font-size: 1.5rem;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .try {
+        width: 100%;
+        padding: 10px;
+        font-size: 2rem;
+        height: 55px;
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    form input {
+        font-size: 25px;
+    }
+
+    form button {
+        padding: 10px;
+        font-size: 1.8rem;
+        height: 55px;
+    }
+}
+
