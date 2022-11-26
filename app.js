@@ -327,3 +327,58 @@ const c = 'CISEAUX';
             alert(`${j1} VS ${j2} ?? Armes invalides ! Va jouer ailleurs !`);
         }
     }
+
+    // ==============================================================
+
+    function minuteToHour() {
+        let minute = parseInt(prompt('Entrez la munute: '));
+        if(isNaN(minute)) {
+            return alert('Ce n\'est pas un nombre ça !');
+        }
+        let hour = 0;
+        let day = 0;
+        while(minute > 59) {
+            minute -= 60;
+            hour++;
+        }
+        while(hour > 23) {
+            hour -= 24;
+            day++;
+        }
+        day > 0 ? alert(`Cela fait : ${day}j ${hour}h ${minute}min`) : alert(`Cela fait : ${hour}h ${minute}min`);
+    }
+
+    // ==============================================================
+
+    function duration() {
+        let hdepart = parseInt(prompt('Entrez l\'heure de départ : '));
+        let mdepart = parseInt(prompt('Entrez la minute de départ : '));
+        if(isNaN(hdepart) || isNaN(mdepart)) {
+            return alert('Vous avez erronez quelque part !');
+        }
+        alert(`Votre départ est à : ${hdepart}h ${mdepart}min`);
+        let harrive = parseInt(prompt('Entrez l\'heure d\'arrivé : '));
+        let marrive = parseInt(prompt('Entrez la minute d\'arrivé : '));
+        if(isNaN(harrive) || isNaN(marrive)) {
+            return alert('Vous avez erronez quelque part !');
+        }
+        alert(`Votre départ est à : ${harrive}h ${marrive}min`);
+        let hduree;
+        let mduree;
+
+        if(hdepart > harrive) {
+            hdepart -= 12;
+            harrive += 12;
+        };
+
+        if(hdepart <= harrive && mdepart <= marrive) {
+            hduree = harrive - hdepart;
+            mduree = marrive - mdepart;
+        } else if(mdepart > marrive) {
+            marrive += 60;
+            harrive -=1;
+            mduree = marrive - mdepart;
+            hduree = harrive - hdepart;
+        }
+        alert(`Départ : ${hdepart}h ${mdepart}min\nArrivée : ${harrive}h ${marrive}min\n\nLa durée est : ${hduree}h ${mduree}min`);
+    }
