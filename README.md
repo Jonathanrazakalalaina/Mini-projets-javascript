@@ -1,2 +1,2 @@
 # Mini-javascript-projects
-## This project focuses on manipulating the native javascript language
+## This project focuses on manipulating the `native javascript` language
