@@ -11,8 +11,7 @@
     <h1>Mes mini-projets Javascript</h1>
 
     <form>
-        <input class="search-input" type="text" placeholder="Rechercher un projet" required>
-        <button type="submit">Rechercher</button>
+        <input class="search-input" type="search" placeholder="Rechercher un projet">
     </form>
     
     <div class="projects-block">
@@ -81,6 +80,21 @@
             <p>Connaîs-tu le fameux jeu du pierre-papier-ciseaux ? J'en étais sûr ! Ici, je t'ai écris un programme qui permet d'en jouer. Tu veux essayer ?</p>
             <button class="try" onclick="pierrePapierCiseaux()">Essayer</button>
         </div>
+
+        <div class="project">
+            <h3>Conversion minute/heure.</h3>
+            <img src="img/clock.svg" alt="image descriptive">
+            <p>Tu as du mal à exprimer la valeur de plus de 60 minutes en heure ? Comme un match de foot qui dure 90 minutes! Essaie un peu ce programme pour t'aider.</p>
+            <button class="try" onclick="minuteToHour()">Essayer</button>
+        </div>
+
+        <div class="project">
+            <h3>Calcul de durée !</h3>
+            <img src="img/clock-rotate-left.svg" alt="image descriptive">
+            <p>On ne peut s'échapper de la fonctionnalité qui calcule la durée entre un intervalle de temps. Si tu veux expérimenter, je te donne l'honneur en appuyant sur le boutton "Essayer" ci-dessous.</p>
+            <button class="try" onclick="duration()">Essayer</button>
+        </div>
+    </div>
 
 
    <script src="app.js"></script>
