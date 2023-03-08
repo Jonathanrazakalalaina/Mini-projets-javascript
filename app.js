@@ -381,7 +381,6 @@ const c = 'CISEAUX';
             hduree = harrive - hdepart;
         }
         alert(`Départ : ${hdepart}h ${mdepart}min\nArrivée : ${harrive}h ${marrive}min\n\nLa durée est : ${hduree}h ${mduree}min`);
-<<<<<<< HEAD
     }
 
 //fonction de recherche
@@ -410,6 +409,3 @@ function recherche() {
     }
 
 }
-=======
-    }
->>>>>>> 8ab271431786607e5026ff8ac31b9278b6db7c65
