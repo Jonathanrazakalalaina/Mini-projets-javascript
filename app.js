@@ -399,7 +399,6 @@ function recherche() {
         let alltitles = titles[i].innerText;
 
         if(alltitles.toLowerCase().indexOf(filter) > -1) {
-            console.log(alltitles.toLowerCase().indexOf(filter));
             projects[i].style.display = 'flex';
         } else {
             projects[i].style.display = 'none';
