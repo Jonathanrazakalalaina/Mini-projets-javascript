@@ -36,36 +36,24 @@ input:focus {
     border-bottom: 2px solid #12a1da;
 }
 
-form button {
-    padding: 5px;
-    height: 40px;
-    margin: 20px 0;
-    border: 1px solid #ddd;
-    font-size: 1.1rem;
-    transition: all 0.3s ease-in 0s;
-}
-
-form button:hover {
-    cursor: pointer;
-    background-color: #ccc;
-}
-
 .projects-block {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    flex-direction: row;
-    margin: 20px;
+    align-items: flex-start;
+    padding: 20px;
 }
 
 .project {
-    margin: 10px;
-    padding: 10px;
+    margin: 15px;
+    padding: 20px;
     width: 275px;
     display: flex;
     flex-direction: column;
     align-items: flex-start center;
-    border: 1px solid #cccccc;
+    box-shadow: 2px 7px 10px 2px rgba(0, 0, 0, 0.27);
+    border-radius: 20px;
     background-color: white;
     transition: all 0.1s ease-in 0s;
 }
@@ -73,10 +61,6 @@ form button:hover {
 .ten div {
     display: flex;
     flex-direction: row;
-}
-
-.project:hover {
-    box-shadow: 2px 4px  10px #808080;
 }
 
 h3 {
@@ -90,15 +74,17 @@ img {
     margin: 10px 38px;
 }
 
-p {
-    pointer-events: none;
+.project p {
+    text-align: left;
 }
 
 .try {
   width: 50%;
   height: 40px;
   margin: 10px 0;
-  border: 1px solid #ddd;
+  border: none;
+  outline: none;
+  border-radius: 5px;
   font-size: 1.1rem;
   background-color: #12a1da;
   color: white;
@@ -111,12 +97,29 @@ p {
     color: white;
 }
 
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1.5px solid #333;
+}
+
+@media screen and (max-width: 1210px) {
+    .projects-block {
+        grid-template-rows: repeat(auto, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 0;
+    }
+    .project {
+        margin: 15px 0;
+    }
+}
 
 
-@media (max-width: 760px) {
+@media (max-width: 683px) {
 
     h1 {
-        font-size: 3rem;
+        font-size: 30px;
     }
 
     .projects-block {
@@ -128,17 +131,16 @@ p {
         width: 100%;
         align-items: center;
         padding: 30px;
-        font-size: 1.5rem;
+        font-size: 20px;
         margin: 20px auto;
         display: flex;
         flex-direction: column;
     }
 
     .try {
-        width: 100%;
+        width: 50%;
         padding: 10px;
-        font-size: 2rem;
-        height: 55px;
+        font-size: 20px;
     }
 
     form {
@@ -149,13 +151,7 @@ p {
     }
 
     form input {
-        font-size: 25px;
-    }
-
-    form button {
-        padding: 10px;
-        font-size: 1.8rem;
-        height: 55px;
+        font-size: 15px;
     }
 }
 
