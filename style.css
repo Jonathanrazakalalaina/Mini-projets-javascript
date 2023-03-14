@@ -110,9 +110,6 @@ img {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 0;
     }
-    .project {
-        margin: 15px 0;
-    }
 }
 
 
