@@ -49,6 +49,7 @@ input:focus {
     margin: 15px;
     padding: 20px;
     width: 275px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: flex-start center;
@@ -112,6 +113,7 @@ img {
     }
     .project {
         margin: 15px 0;
+        height: auto;
     }
 }
 
