@@ -37,12 +37,23 @@ input:focus {
 }
 
 .projects-block {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 20px;
+    width: 90vw;
+    margin: 2rem auto;
+    max-width: 1170px;
+    display: grid;
+    gap: 3rem 1rem;
+    justify-items: center;
+}
+
+@media screen and (min-width: 975px) {
+    .projects-block {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen and (max-width: 974px) {
+    .projects-block {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 .project {
@@ -106,11 +117,6 @@ img {
 }
 
 @media screen and (max-width: 1210px) {
-    .projects-block {
-        grid-template-rows: repeat(auto, 1fr);
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 0;
-    }
     .project {
         margin: 15px 0;
         height: auto;
@@ -124,11 +130,6 @@ img {
         font-size: 30px;
     }
 
-    .projects-block {
-        display: flex;
-        flex-direction: column;
-    }
-
     .project {
         width: 100%;
         align-items: center;
@@ -137,6 +138,10 @@ img {
         margin: 20px auto;
         display: flex;
         flex-direction: column;
+    }
+
+    .projects-block {
+        grid-template-columns: 1fr;
     }
 
     .try {
